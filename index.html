@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | E-commerce product page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300&family=Rajdhani&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar">
+      <!-- hamburger button -->
+      <div class="hamBtn">
+        <span class="lines"></span>
+        <span class="lines"></span>
+        <span class="lines"></span>
+      </div>
+      <!-- logo section -->
+      <div class="logo-section">
+        <img src="./images/logo.svg" alt="logo" id="logo">
+      </div>
+
+      <!-- list items -->
+
+      <div class="nav-items-section">
+        <img src="./images/icon-close.svg" alt="" class="close">
+        <ul class="nav-list">
+          <li class="list-items collection">
+            <a href="#">Collection</a>
+          </li>
+          <li class="list-items men">
+            <a href="#">Men</a>
+          </li>
+          <li class="list-items women">
+            <a href="#">Women</a>
+          </li>
+          <li class="list-items about">
+            <a href="#">About</a>
+          </li>
+          <li class="list-items contact">
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- admin panel -->
+      <div class="admin-panel">
+        <div class="cart">
+          <img src="./images/icon-cart.svg" alt="cart-logo" id="cart-logo">
+        </div>
+        <div class="profile">
+          <img src="./images/image-avatar.png" alt="profile" id="profile" width="30" height="30">
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+
+  <!-- main section -->
+
+
+
+
+
+  <!-- cart pop up -->
+
+
+
+  <div class="cart-section hide">
+    <p id="cart-heading"><b>Cart</b></p>
+    <p id="emptymsg" style="text-align: center;margin-top: 10px;">Your cart is empty</p>
+    <div class="bill hide">
+      <img src="./images/image-product-1-thumbnail.jpg" alt="billproduct" id="bill-product">
+      <div class="bill-discription">
+        <p>Fall Limited Edition Sneakers</p>
+        <p>$125 x <span class="quantity">0</span> = <span class="quantity-price"></span>
+        </p>
+      </div>
+      <img src="./images/icon-delete.svg" alt="delete" id="delete">
+    </div>
+    <button class="checkoutBtn hide">Checkout</button>
+  </div>
+
+
+
+
+  <main>
+    <div id="product-section">
+
+
+      <!-- left product section -->
+
+
+      <div class="current-product-img">
+        <img src="./images/image-product-1.jpg" alt="current-product" class="currentproduct">
+      </div> 
+
+
+      <!-- arrows -->
+
+      <div class="arrows">
+        <button id="leftarrow"><img src="./images/icon-previous.svg" alt="left-arrow"></button>
+        <button id="rightarrow"><img src="./images/icon-next.svg" alt="right-arrow"></button>
+      </div>
+    </div>
+
+
+
+    <!-- right product discription section -->
+
+
+    <div id="discripton-section">
+      <p id="sub-heading">SNEAKER COMPANY</p>
+      <h1 class="product-heading">For Limited Edition <br>Sneakers</h1>
+      <p class="product-discription" style="text-align: justify; line-height: 30px;">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. At iste praesentium, iusto, optio voluptatum mollitia
+        similique non eaque rerum voluptates quo magni dignissimos animi? Eaque veniam fuga molestias doloremque earum!
+      </p>
+      <span class="price-section">
+        <h3 class="discount-price" style="display: inline;margin-top: 5px;">$125</h3>
+        <p class="discout">50%</p>
+      </span>
+      <p class="actual-price" style=" text-decoration:line-through;">$200</p>
+      <div class="counterNcartsection">
+        <div class="counter-section">
+          <button id="minus-count">
+            <img src="./images/icon-minus.svg" alt="minus" id="minus">
+          </button>
+          <p class="quantity">0</p>
+          <button id="plus-count">
+            <img src="./images/icon-plus.svg" alt="plus" id="plus">
+          </button>
+        </div>
+        <div class="cart-btn">
+          <img src="./images/icon-cart.svg" alt="cartbtn" id="cartbtn">
+          <p>Add To Cart</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+
+
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" style="color: black;"> @Frontend
+      Mentor</a>.
+    Coded by <a href="https://github.com/Dhruv13g45">Dhruv Goradia</a>.
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
